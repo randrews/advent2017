@@ -1,0 +1,16 @@
+b = 109900
+c = b + 17000
+
+loop do
+  f = 1
+
+  (2..b).each do |d|
+    (2..b).each do |e|
+      f = 0 if d * e == b
+    end
+  end
+
+  h += 1 if f == 0
+  return if b == c
+  b += 17
+end
